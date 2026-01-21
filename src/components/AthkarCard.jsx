@@ -3,12 +3,15 @@ function AthkarCard({ id, text, maxCount, total }) {
   const [count, setcount] = useState(0);
 
   const handleShare = () => {
-    navigator.share ? navigator.share({ text }) : alert("Sharing not supported");
+    navigator.share
+      ? navigator.share({ text })
+      : alert("Sharing not supported");
   };
 
   const handlePlay = () => {
     const utterance = new SpeechSynthesisUtterance(text);
-    speechSynthesis.speak(utterance);
+    utterance.lang = 'ar-SA';
+    window.speechSynthesis.speak(utterance);
   }
 
   const handleCount = () => {

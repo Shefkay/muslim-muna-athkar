@@ -1,0 +1,46 @@
+* {
+  --color-primary: rgb(0, 128, 0);
+  --color-secondary: rgb(255, 255, 0);
+  --color-secondary-card: rgb(255, 255, 221);
+  --color-secondary-subcard: rgb(255, 255, 233);
+  --text-color: rgb(65, 43, 43);
+  --accent-color: rgb(253, 253, 253);
+}
+
+body {
+  background-color: var(--accent-color);
+}
+
+.athkar-container {
+  max-width: 400px;
+}
+
+.card {
+  position: relative;
+  background-color: var(--color-secondary-card);
+  /* padding: 20px; */
+  border-radius: 20px;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+span {
+  text-align: center;
+}
+
+p {
+  padding: 0 20px;
+}
+
+.buttons {
+  background-color: var(--color-secondary-subcard);
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 0 0 20px 20px;
+}

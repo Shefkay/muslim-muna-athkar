@@ -34,13 +34,63 @@ const athkarList = [
     text: "Allahumma bika asbahna wabika amsayna, wabika nahya, wabika namootu wa-ilaykan-nushoor",
     maxCount: 1
   },
+  {
+    id: 5,
+    text: "Allahuma Anta Rabby La Ila Ila'Ant, Kalaqtani Wa'Ana Abduk, Wa'Ana'Alaa'Ahdeka Wa Wa'dika Ma Stata't Au'thu Beka min Shar Ma Sana't Abu'u laka Be Ni;matika 'Alay, Wa Abu'u Be Thanby, Fa Ighfir lee, Fa Inahu La Yaghfiru A Thunuba Ila Ant.",
+    maxCount: 1
+  },
+  {
+    id: 6,
+    text: "Allahumma innee asbahtu oshhiduk, wa-oshhidu hamalata AAarshik, wamala-ikatak, wajameeAAa khalqik, annaka antal-lahu la ilaha illa ant, wahdaka la shareeka lak, wa-anna Muhammedan AAabduka warasooluk.",
+    maxCount: 4
+  },
+  {
+    id: 7,
+    text: "Allahumma ma asbaha bee min niAAmatin, aw bi-ahadin min khalqik, faminka wahdaka la sharrek lak, falakal-hamdu walakash-shukr",
+    maxCount: 1
+  },
+  {
+    id: 8,
+    text: "Allahumma AAafinee fee badanee, allahumma AAafinee fee samAAee, allahuma AAafinee fee basaree, la ilaha illa ant.",
+    maxCount: 3
+  },
+  {
+    id: 9,
+    text: "Allahumma innee aAAoothu bike minal-kufr, walfaqr, wa-aAAoothu bika min AAathabil-qabr, la ilaha illa ant.",
+    maxCount: 3
+  },
+  {
+    id: 10,
+    text: "Hasbiyal-lahu la ilaha illa huwa, AAalayhi tawakkalt, wahawa rabbul-AAarshil-AAatheem.",
+    maxCount: 7
+  },
+  {
+    id: 11,
+    text: "Allahumma innee as-alukal-AAafwa walAAafiyah, fid-dunya wal-akhirah, allahumma innee as-alukal-AAafwa walAAafiyah fee deenee, wadunyaya wa-ahlee, wamalee, allahummas-tur AAawratee, wa-amin rawAAatee, allahumm ah-fathnee min bayni yaday, wamin khalfee, waAAan yameenee, waAAan shimalee, wamin fawqee, wa-aAAoothu bi AAathamatik an oghtala min tahtee.",
+    maxCount: 1
+  },
+  {
+    id: 12,
+    text: "Allahumma AAalimal-ghaybi washshahadah, fatiras-samawati wal-ard, rabba kulli shayin wamaleekah, ashhadu an la ilaha illa ant, aAAoothu bika min sharri nafsee wamin sharr al-shaytani washirkih, waan aqtarifa AAala nafsee soo-an aw aujurrahu ila muslim.",
+    maxCount: 1
+  },
+  {
+    id: 13,
+    text: "Allahumma AAalimal-ghaybi washshahadah, fatiras-samawati wal-ard, rabba kulli shayin wamaleekah, ashhadu an la ilaha illa ant, aAAoothu bika min sharri nafsee wamin sharr al-shaytani washirkih, waan aqtarifa AAala nafsee soo-an aw aujurrahu ila muslim.",
+    maxCount: 1
+  },
+  {
+    id: 14,
+    text: "Bismil-lahil.",
+    maxCount: 1
+  },
 ]
 
 function App() {
   const total = athkarList.length
   return (
     <>
-      <div>
+      <div className="athkar-container">
         {athkarList.map((athkar) => (
           <AthkarCard
             key={athkar.id}
