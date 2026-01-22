@@ -9,6 +9,13 @@
 
 body {
   background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 300px;
 }
 
 .athkar-container {
