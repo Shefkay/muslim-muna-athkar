@@ -22,12 +22,18 @@ function AthkarCard({ id, text, maxCount, total }) {
 
   return (
     <div className="card">
-      <span>{id}-{total}</span>
+      <span className="num-id">{id}-{total}</span>
       <p>{text}</p>
       <div className="buttons">
-        <button onClick={handleShare}>Share</button>
-        <button onClick={handleCount}>{count}/{maxCount}</button>
-        <button onClick={handlePlay}>Play</button>
+        <button onClick={handleShare}
+        >Share
+        </button>
+        <button onClick={handleCount}>
+          <span className="count">{count}/{maxCount}</span>
+        </button>
+        <button onClick={handlePlay}>
+          Play
+        </button>
       </div>
     </div>
   );

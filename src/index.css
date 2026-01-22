@@ -14,8 +14,57 @@ body {
   align-items: center;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  border-bottom: 1px solid #ddd;
+  background-color: var(--color-primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 100;
+}
+
+.nav-item {
+  color: var(--accent-color);
+  background: none;
+  border: none;
+  font-size: 18px;
+  padding: 12px 0;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+
+.nav-item.inactive {
+  opacity: 0.5;
+}
+
+.nav-item.active-morning::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--color-secondary);
+}
+
+.nav-item.active-evening::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--color-secondary);
+}
+
 .main {
-  width: 300px;
+  width: 400px;
 }
 
 .athkar-container {
@@ -27,14 +76,18 @@ body {
   background-color: var(--color-secondary-card);
   /* padding: 20px; */
   border-radius: 20px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card:not(:last-child) {
   margin-bottom: 20px;
 }
 
-span {
-  text-align: center;
+.num-id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 
 p {
@@ -48,6 +101,40 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   border-radius: 0 0 20px 20px;
+}
+
+.buttons button {
+  color: var(--accent-color);
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.buttons button:nth-child(2) {
+  border-radius: 40px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons button:nth-child(2) .count {
+  /* margin-bottom: 20px; */
+  width: 40px;
+  height: 40px;
+  box-shadow: 1px -1px 0px rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.buttons button:nth-child(odd) {
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

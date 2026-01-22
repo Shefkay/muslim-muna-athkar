@@ -10,12 +10,26 @@ function App() {
 
   return (
     <>
-      <nav >
-        <button onClick={() => setActivePage('morning')}>Morning</button>
-        <button onClick={() => setActivePage('evening')}>Evening</button>
+      <nav className='navbar'>
+        <button
+          className={`nav-item ${activePage === 'morning' ? 'active-morning' : 'inactive'}`}
+          onClick={() => setActivePage('morning')}
+          disabled={activePage === 'morning'}
+        >
+          Morning
+        </button>
+        <button
+          className={`nav-item ${activePage === 'evening' ? 'active-evening' : 'inactive'}`}
+          onClick={() => setActivePage('evening')}
+          disabled={activePage === 'evening'}
+        >
+          Evening
+        </button>
       </nav>
       <main className='main'>
-        {activePage === 'morning' ? <MorningAthkar /> : <EveningAthkar />}
+        {activePage === 'morning'
+          ? <MorningAthkar />
+          : <EveningAthkar />}
       </main>
     </>
   )
