@@ -14,6 +14,13 @@ body {
   align-items: center;
 }
 
+p,
+h1,
+h2,
+span {
+  font-family: sans-serif;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -109,6 +116,7 @@ p {
   color: var(--accent-color);
   background-color: var(--color-primary);
   border: none;
+  margin-bottom: 10px;
 }
 
 .buttons button:nth-child(2) {
@@ -118,15 +126,18 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .buttons button:nth-child(2) .count {
-  /* margin-bottom: 20px; */
   width: 40px;
   height: 40px;
   box-shadow: 1px -1px 0px rgba(255, 255, 255, 0.5);
   border-radius: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .buttons button:nth-child(odd) {
@@ -137,4 +148,5 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }

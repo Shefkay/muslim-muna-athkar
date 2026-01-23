@@ -25,14 +25,14 @@ function AthkarCard({ id, text, maxCount, total }) {
       <span className="num-id">{id}-{total}</span>
       <p>{text}</p>
       <div className="buttons">
-        <button onClick={handleShare}
-        >Share
+        <button onClick={handleShare}>
+          <img src="/share-fill.svg" alt="share" />
         </button>
         <button onClick={handleCount}>
           <span className="count">{count}/{maxCount}</span>
         </button>
         <button onClick={handlePlay}>
-          Play
+          <img src="/play-fill.svg" alt="play" />
         </button>
       </div>
     </div>
